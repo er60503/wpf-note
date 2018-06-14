@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApplication2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="125"></ColumnDefinition>
+            <ColumnDefinition ></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Rectangle Grid.Column="0" Fill="Black" ></Rectangle>
+        <StackPanel Grid.Column="0" Margin="10">
+            <Button Background="Black" BorderBrush="Black" Foreground="Gray" Margin="10,5,19.8,10" Padding="-15 0 20 0" Click="New_Click" Content="New"/>
+            <Button Background="Black" BorderBrush="Black" Foreground="Gray" Margin="10 5 20 10" Padding="-13 0 20 0" Click="Open_Click_1" Content="Open"/>
+            <Button Background="Black" BorderBrush="Black" Foreground="Gray" Margin="10 5 20 10" Padding="-15 0 20 0" Click="Save_Click_2" Content="Save"/>
+            <Button Background="Black" BorderBrush="Black" Foreground="Gray" Margin="10 5 20 10" Padding="-1 0 20 0" Click="Save_as_Click" Content="Save as"/>
+            <Button Background="Black" BorderBrush="Black" Foreground="Gray" FontSize="10" FontFamily="Times New Roman" Margin="10 5 75 10" Padding="0 0 0 0" Click="A10_Click" Content="A"/>
+            <Button Background="Black" BorderBrush="Black" Foreground="Gray" FontSize="14" FontFamily="Times New Roman" Margin="30 -36 50 0" Padding="10 0 0 0" Click="A14_Click" Content="A"/>
+            <Button Background="Black" BorderBrush="Black" Foreground="Gray" FontSize="18" FontFamily="Times New Roman" Margin="60 -30 10 10" Padding="0 0 0 0" Click="A18_Click" Content="A"/>
+            <RadioButton Background="Gray" Margin="12 0 70 0" Checked="RadioButton_Checked"/>
+            <RadioButton Background="White" Margin="40 -14 40 0" Checked="RadioButton_Checked_1"/>
+        </StackPanel>
+
+        <TextBox x:Name="TextArea" Margin="126 0 -390 0" AcceptsReturn="True" TextWrapping="Wrap" Background="White" Foreground="Gray"></TextBox>
+
+    </Grid>
+</Window>
